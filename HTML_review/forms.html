@@ -31,7 +31,43 @@
         </p>
         <button>Submit</button>
     </form>
-
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+    </form>
+    <form action="/seals">
+        <label for="sm">SM:</label>
+        <input type="radio" name="shirt_size" id="sm" value="small">
+        <label for="med">MED:</label>
+        <input type="radio" name="shirt_size" id="med" value="medium">
+        <label for="lg">LG:</label>
+        <input type="radio" name="shirt_size" id="lg" value="large">
+        <button>Confirm Shirt Size</button>
+    </form>
+    <form>
+        <!--<label for="meal">Please chose an entree:</label>-->
+        <select name="meal" id="meal">
+            <option value="">--Please chose an entree:--</option>
+            <option value="fish">Fish</option>
+            <option value="veg">Vegertarian</option>
+            <option value="steak">Steak</option>
+            <label for="cheese"></label>
+            <input type="range" name="cheese" id="cheese" min="1" max="101" step="5">
+            <p>
+                <label for="requests">Any special requests?</label>
+                <br>
+                <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <button>Submit</button>
+            </p>
+        </select>
+    </form>
 </body>
 
 </html>
